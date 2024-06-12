@@ -1,4 +1,4 @@
-// ignore_for_file: sized_box_for_whitespace, avoid_unnecessary_containers, avoid_print
+// ignore_for_file: sized_box_for_whitespace, avoid_unnecessary_containers, avoid_print, unused_import
 
 import 'package:arabic_font/arabic_font.dart';
 import 'package:black_box/models/login_checker.dart';
