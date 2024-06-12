@@ -6,6 +6,7 @@ import 'package:black_box/modules/corru_disco/corru_discov.dart';
 import 'package:black_box/modules/dashboard/dashboard.dart';
 import 'package:black_box/modules/home/home.dart';
 import 'package:black_box/modules/library/lib.dart';
+import 'package:black_box/modules/login/login.dart';
 import 'package:black_box/modules/print/print.dart';
 import 'package:black_box/modules/splash/welcome.dart';
 import 'package:bloc/bloc.dart';
@@ -42,9 +43,9 @@ class MainApp extends StatelessWidget
   @override
   Widget build(BuildContext context) {
     return  const MaterialApp(
-      home: Welcome(),
+      home: LoginScreen(),
       //color: Colors.red,
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
     );
   }
 }

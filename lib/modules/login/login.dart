@@ -1,10 +1,13 @@
 // ignore_for_file: sized_box_for_whitespace, avoid_unnecessary_containers, avoid_print
 
+import 'package:arabic_font/arabic_font.dart';
 import 'package:black_box/models/login_checker.dart';
 import 'package:black_box/modules/login/cubit/states.dart';
 import 'package:black_box/utils/button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:google_fonts/google_fonts.dart';
+
 
 import 'cubit/cubit.dart';
 
@@ -78,13 +81,19 @@ bool _obscureText = true;
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(10.0),
                                   child: Image.asset(
-                                    "assets/images/sc_assault.jpg",
-                                    //"assets/images/tmc.png",
+                                    //"assets/images/sc_assault.jpg",
+                                    "assets/images/tmc.png",
                                     width: 250,
                                     height: 250,
                                     fit: BoxFit.cover,
                                   ),
                                 ),
+                              ),
+
+                              //const SizedBox(height: 30,),
+                              Container(
+                                child:  Text("جناح الحاسب الالي - الصندوق الاسود", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18, fontFamily: ArabicThemeData.font(arabicFont: ArabicFont.dinNextLTArabic), package: ArabicThemeData.package),),
+                                //child:  Text("جناح الحاسب الالي", style: GoogleFonts.lato(),
                               ),
                               const SizedBox(height: 30,),
                               Container(
