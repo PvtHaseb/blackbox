@@ -50,7 +50,8 @@ class _HomeState extends State<Home> {
                             height: 350,
                             child: ClipRRect(
                                 borderRadius: BorderRadius.circular(25),
-                                child: Image.asset("assets/images/lib4.png")),
+                                //child: Image.asset("assets/images/lib4.png")),
+                                child: Image.asset("assets/images/Corr_dis.png")),
                           ),
                         ),
                         //const SizedBox(height: 15),
@@ -79,7 +80,8 @@ class _HomeState extends State<Home> {
                             height: 350,
                             child: ClipRRect(
                                 borderRadius: BorderRadius.circular(25),
-                                child: Image.asset("assets/images/corru_discov1.png")),
+                                //child: Image.asset("assets/images/corru_discov1.png")),
+                                child: Image.asset("assets/images/Soldier.png")),
                           ),
                         ),
                         const SizedBox(height: 3),

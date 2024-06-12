@@ -15,7 +15,7 @@ import 'package:black_box/utils/textfield.dart';
 List<String> itemsList = <String>['Mouse', 'Keyboard', 'Power Cable', 'VGA Cable', 'HDMI Cable', 'Neon Lamb', 'CRT Screen', 'Case', 'Ethernet'];
 List<String> colorList = <String>['Black', 'White', 'Blue', 'Red'];
 List<String> brandList = <String>['Microsoft','Hp', 'DELL', 'Fujitsu', 'XO', 'WOLF', 'Tiger', 'Icon', 'MediaTech'];
-List<String> destnationList = <String>['Library', 'Corruption Discovery'];
+List<String> destnationList = <String>['Vault', 'Corruption Discovery'];
 
 class AdminDashboard extends StatefulWidget
 {
