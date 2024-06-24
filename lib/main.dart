@@ -43,7 +43,7 @@ class MainApp extends StatelessWidget
   @override
   Widget build(BuildContext context) {
     return  const MaterialApp(
-      home: Home(),
+      home: Welcome(),
       //color: Colors.red,
       debugShowCheckedModeBanner: false,
     );

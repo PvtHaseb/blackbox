@@ -32,8 +32,12 @@ void showAlertDialog(BuildContext context) {
             height: 21,
             child: const Column(children: [Text('User name Or Password is Incorrect.'),]),
           ),
-          actions: <Widget>[TextButton(child: Text('OK',style: TextStyle(color: Specs().cBlack),),
-          onPressed: () {Navigator.of(context).pop();},
+          actions: <Widget>[
+            TextButton(
+              child: Text('OK',style: TextStyle(color: Specs().cBlack),),
+          onPressed: () {Navigator.of(context).pop();
+          },
+          
             ),
           ],
         );
