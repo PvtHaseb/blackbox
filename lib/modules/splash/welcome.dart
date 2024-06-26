@@ -1,6 +1,7 @@
 import 'package:black_box/modules/login/login.dart';
 import 'package:tbib_splash_screen/splash_screen_view.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 class Welcome extends StatelessWidget {
   const Welcome({super.key});
