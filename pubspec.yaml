@@ -22,6 +22,8 @@ dependencies:
   google_fonts: ^6.2.1
   arabic_font: ^0.0.9
   flutter_localization: ^0.2.0
+  flutter_localizations:
+    sdk: flutter
 
 
 dev_dependencies:

@@ -10,6 +10,7 @@ import 'package:black_box/modules/login/login.dart';
 import 'package:black_box/modules/print/print.dart';
 import 'package:black_box/modules/splash/welcome.dart';
 import 'package:bloc/bloc.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:window_manager/window_manager.dart';
 import 'package:flutter/material.dart';
 
@@ -43,7 +44,16 @@ class MainApp extends StatelessWidget
   @override
   Widget build(BuildContext context) {
     return  const MaterialApp(
-      home: Welcome(),
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: [
+        Locale('en', 'US'), // English
+        Locale('ar', 'EG'), // Arabic
+      ],
+      home: Home(),
       //color: Colors.red,
       debugShowCheckedModeBanner: false,
     );
