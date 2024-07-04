@@ -13,6 +13,7 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:window_manager/window_manager.dart';
 import 'package:flutter/material.dart';
+import 'l10n/languages.dart';
 
 void main() async {
   // initialize isar Items DataBase

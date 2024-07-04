@@ -1,7 +1,7 @@
 // ignore_for_file: unused_local_variable, dead_code
 
 import 'package:black_box/models/database/db.dart';
-import 'package:black_box/backup/db_functions_c.dart';
+import 'package:black_box/models/database/db_functions.dart';
 import 'package:black_box/models/database/db_init.dart';
 import 'package:black_box/modules/dashboard/cubit/states.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

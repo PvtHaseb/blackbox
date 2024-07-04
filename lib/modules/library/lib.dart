@@ -1,8 +1,6 @@
-// ignore_for_file: unused_import
-
 import 'package:black_box/const/const.dart';
-import 'package:black_box/models/database/db_functions.dart';
 import 'package:black_box/models/database/db.dart';
+import 'package:black_box/modules/dashboard/cubit/cubit.dart';
 import 'package:black_box/modules/library/cubit/cubit.dart';
 import 'package:black_box/modules/library/cubit/states.dart';
 import 'package:black_box/utils/appbar.dart';
@@ -25,7 +23,7 @@ class Library extends StatelessWidget {
                 appBar: defaultAppBar(appBarTitle: "Library", elevation: 3, appbarColor: Specs().cGray_400),
 
                 body: FutureBuilder<List<Items>>(
-                  future: isar.items.where().filter().destnationEqualTo("Library",).findAll(),
+                  future: isar.items.where().filter().destnationEqualTo("Vault",).findAll(),
                   builder: (context, snapshot) {
                     if (snapshot.connectionState == ConnectionState.waiting) {
                       return const CircularProgressIndicator();
