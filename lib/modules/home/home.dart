@@ -8,10 +8,10 @@ import 'package:black_box/modules/library/lib.dart';
 import 'package:black_box/utils/appbar.dart';
 import 'package:black_box/utils/button.dart';
 import 'package:black_box/utils/drawer.dart';
+// import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-String title = "Welcome";
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -31,14 +31,21 @@ class _HomeState extends State<Home> {
         return SafeArea(
           child: Scaffold(
             drawer: defaultDrawer(context),
-            appBar:
-                defaultAppBar(appBarTitle: title, elevation: 3, appbarColor: Specs().cGray_400),
+            //appBar: defaultAppBar( title: Text(AppLocalizations.of(context)!.welcome), elevation: 3, appbarColor: Specs().cGray_400),
+            appBar: defaultAppBar( appBarTitle: "Library", elevation: 3, appbarColor: Specs().cGray_400),
             body: Padding(
-              padding: const EdgeInsets.all(10),
-              child: Row(
-                children: <Widget>[
-                  Expanded(
-                    //flex: 1,
+                  padding: const EdgeInsets.all(10),
+                  child: Row(
+                    children: <Widget>[
+
+                      Localizations.override
+                      (
+                        context: context,
+                        locale: const Locale('ar'),
+                      ),
+
+                      Expanded(
+                        //flex: 1,
                     child: Container(
                       //color: Specs().cGray_300,
                       height: double.infinity,

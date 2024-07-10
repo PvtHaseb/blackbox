@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
 AppBar defaultAppBar({          //Constructor Calls These Parameters whenever The code is being compiled every time.
-  required String appBarTitle, //AppBar Title.
+  String? appBarTitle, //AppBar Title.
   IconButton? iconButton,     //IF u WANT icons in the AppBar!.
   Color? appbarColor,
   IconButton? backwordArrow,
   //IconButton? languageButton,
   double? elevation,
+  Text? title,
 
 })
 
@@ -15,7 +16,7 @@ AppBar defaultAppBar({          //Constructor Calls These Parameters whenever Th
     backgroundColor: appbarColor,
     elevation: elevation,
     
-    title: Text(appBarTitle, style: const TextStyle(color: Colors.deepPurple)), //AppBar Title in a String Varaible Will be used in a TEXT Widget... Just pass it Tgat String.
+    //title: Text(appBarTitle!, style: const TextStyle(color: Colors.deepPurple)), //AppBar Title in a String Varaible Will be used in a TEXT Widget... Just pass it Tgat String.
     leading: backwordArrow,               //An Arrow To back in Pages
     actions: <Widget>[                     //ICON will be in Actions Not Leadings.
     IconButton(onPressed: (){}, icon: const Icon(Icons.language)),

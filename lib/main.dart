@@ -1,19 +1,12 @@
-// ignore_for_file: unused_import
-
 import 'package:black_box/const/bloc/bloc_observer.dart';
 import 'package:black_box/models/database/db_init.dart';
 import 'package:black_box/modules/corru_disco/corru_discov.dart';
-import 'package:black_box/modules/dashboard/dashboard.dart';
 import 'package:black_box/modules/home/home.dart';
-import 'package:black_box/modules/library/lib.dart';
-import 'package:black_box/modules/login/login.dart';
-import 'package:black_box/modules/print/print.dart';
-import 'package:black_box/modules/splash/welcome.dart';
 import 'package:bloc/bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:window_manager/window_manager.dart';
+// import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
-import 'l10n/languages.dart';
 
 void main() async {
   // initialize isar Items DataBase
@@ -45,16 +38,17 @@ class MainApp extends StatelessWidget
   @override
   Widget build(BuildContext context) {
     return  const MaterialApp(
-      localizationsDelegates: [
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-      ],
-      supportedLocales: [
-        Locale('en', 'US'), // English
-        Locale('ar', 'EG'), // Arabic
-      ],
-      home: Home(),
+      // localizationsDelegates: [
+      //   AppLocalizations.delegate,
+      //   GlobalMaterialLocalizations.delegate,
+      //   GlobalWidgetsLocalizations.delegate,
+      //   GlobalCupertinoLocalizations.delegate,
+      // ],
+      // supportedLocales: [
+      //   Locale('en', 'US'), // English
+      //   Locale('ar', 'EG'), // Arabic
+      // ],
+      home: CorruptionDiscovery(),
       //color: Colors.red,
       debugShowCheckedModeBanner: false,
     );
