@@ -38,11 +38,11 @@ class _HomeState extends State<Home> {
                   child: Row(
                     children: <Widget>[
 
-                      Localizations.override
-                      (
-                        context: context,
-                        locale: const Locale('ar'),
-                      ),
+                      // Localizations.override
+                      // (
+                      //   context: context,
+                      //   locale: const Locale('ar'),
+                      // ),
 
                       Expanded(
                         //flex: 1,

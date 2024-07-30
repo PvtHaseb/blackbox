@@ -1,9 +1,7 @@
 import 'package:black_box/const/bloc/bloc_observer.dart';
 import 'package:black_box/models/database/db_init.dart';
-import 'package:black_box/modules/corru_disco/corru_discov.dart';
 import 'package:black_box/modules/home/home.dart';
 import 'package:bloc/bloc.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:window_manager/window_manager.dart';
 // import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
@@ -48,7 +46,7 @@ class MainApp extends StatelessWidget
       //   Locale('en', 'US'), // English
       //   Locale('ar', 'EG'), // Arabic
       // ],
-      home: CorruptionDiscovery(),
+      home: Home(),
       //color: Colors.red,
       debugShowCheckedModeBanner: false,
     );

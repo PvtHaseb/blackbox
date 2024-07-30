@@ -11,7 +11,7 @@ class LoginChecker{ //START
 
 //Checker Fun
 void checker(String user, String password){
-  if(user == "Pvt.Haseb" && password == "Pilot"){
+  if(user == "Shadow" && password == "Company"){
     Navigator.push(context, MaterialPageRoute(builder: (context) => const Home()),);
   }
   else{
