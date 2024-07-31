@@ -12,10 +12,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:black_box/utils/textfield.dart';
 
 
-List<String> itemsList = <String>['Mouse', 'Keyboard', 'Power Cable', 'VGA Cable', 'HDMI Cable', 'Neon Lamb', 'CRT Screen', 'Case', 'Ethernet'];
-List<String> colorList = <String>['Black', 'White', 'Blue', 'Red'];
+List<String> itemsList = <String>['فأرة', 'لوحة مفاتيح', 'كابل طاقة', 'كابل شاشه VGA', 'كابل شاشه HDMI', 'شريط تسجيل', 'شاشه CRT', 'كمبيوتر', 'كابل انترنت'];
+List<String> colorList = <String>['أسود', 'ابيض', 'ازرق', 'احمر'];
 List<String> brandList = <String>['Microsoft','Hp', 'DELL', 'Fujitsu', 'XO', 'WOLF', 'Tiger', 'Icon', 'MediaTech'];
-List<String> destnationList = <String>['Vault', 'Corruption Discovery'];
+List<String> destnationList = <String>['المخزن', 'اكتشاف الاعطال'];
 
 class AdminDashboard extends StatefulWidget
 {
@@ -59,7 +59,7 @@ String? serialNumberText;
         {
         return SafeArea(
           child: Scaffold(
-            appBar: defaultAppBar(appBarTitle: "Admin", appbarColor: Specs().cGray_400, elevation: 3),
+            appBar: defaultAppBar(appBarTitle: "صفحة المسؤول", appbarColor: Specs().cGray_400, elevation: 3),
             drawer: defaultDrawer(context),
             body: 
             // Container(
@@ -76,7 +76,7 @@ String? serialNumberText;
                       children: [
                       Row(
                         children: [
-                          const Text("Item:"),
+                          const Text("الايقونه:"),
                           const SizedBox(width: 20,),
                           defultDropDownMenu(
                               wordsList: itemsList,
@@ -90,7 +90,7 @@ String? serialNumberText;
                             ),
                           const SizedBox(width: 50,),
                               
-                          const Text("Brand:"),
+                          const Text("النوع:"),
                           const SizedBox(width: 20,),
                           defultDropDownMenu(
                               wordsList: brandList,
@@ -104,7 +104,7 @@ String? serialNumberText;
                             ),
                           const SizedBox(width: 50,),
                               
-                          const Text("Color:"),
+                          const Text("اللون:"),
                           const SizedBox(width: 20,),
                           defultDropDownMenu(
                               wordsList: colorList,
@@ -121,7 +121,7 @@ String? serialNumberText;
                       const SizedBox(height: 30,),
                       Row(
                         children: [
-                      const Text("S/N:"),
+                      const Text("الرقم التسلسلي:"),
                       const SizedBox(width: 20,),
                       //defaultTextField(containerWidth: 200, textController: serialNumber),
                       Container(
@@ -136,7 +136,7 @@ String? serialNumberText;
                           )
                       ),
                       const SizedBox(width: 20,),
-                      const Text("Destnation:"),
+                      const Text("مكان التواجد:"),
                       const SizedBox(width: 20,),
                       defultDropDownMenu(
                         dropdownValueDefultValue: dropdowndestnationValue,
@@ -158,7 +158,7 @@ String? serialNumberText;
                         serialNumber: serialNumber.text 
                       );
                       serialNumber.clear(); //clears the textfield text after inserted
-                      }, icon: const Icon(Icons.insert_chart), label: const Text("INSERT")
+                      }, icon: const Icon(Icons.insert_chart), label: const Text("إدخال")
                     ),
                 ]
                               ),
@@ -174,7 +174,7 @@ String? serialNumberText;
                               //DELETE
                               Row(
                 children: [
-                      const Text("S/N:"),
+                      const Text("الرقم التسلسلي:"),
                       const SizedBox(width: 20,),
                       //defaultTextField(containerWidth: 200, textController: serialNumber),
                       Container(
@@ -187,7 +187,7 @@ String? serialNumberText;
                           keyboardType: TextInputType.text, // Allows both numbers and letters
                           decoration: const InputDecoration(
                             border: OutlineInputBorder(),
-                            label: Text("rm item via sn")
+                            label: Text("خذف الايقونه باستخدام الرقم التسلسلي")
                             ),
                           )
                       ),
@@ -197,7 +197,7 @@ String? serialNumberText;
                         //DashBoardCubit.get(context).
                         serialNumber.clear(); //clears the textfield text after inserted
                       },
-                      icon: const Icon(Icons.delete), label: const Text("DELETE")
+                      icon: const Icon(Icons.delete), label: const Text("حذف")
                     ),
                   ],
                     ),
@@ -215,7 +215,7 @@ String? serialNumberText;
                   const SizedBox(height: 20,),
                   Row(
                     children: [
-                    const Text("S/N:"),
+                    const Text("الرقم التسلسلي:"),
                     const SizedBox(width: 20,),
                       Container(
                         width: 200,
@@ -227,7 +227,7 @@ String? serialNumberText;
                           keyboardType: TextInputType.text, // Allows both numbers and letters
                           decoration: const InputDecoration(
                             border: OutlineInputBorder(),
-                            label: Text("rd item via sn")
+                            label: Text("قرأة بيانات الايقونه بواسطة الرقم التسلسلي")
                             ),
                           )
                       ),
@@ -238,7 +238,7 @@ String? serialNumberText;
                         DashBoardCubit.get(context).fetchBySN(serialNumberText!);
                         //serialNumber.clear(); //clears the textfield text after inserted
                       },
-                      icon: const Icon(Icons.delete), label: const Text("READ")
+                      icon: const Icon(Icons.delete), label: const Text("قرأة")
                     ),
                     ],
                   ),
@@ -247,7 +247,7 @@ String? serialNumberText;
                     children: [
                       Row(
                         children: [
-                          const Text("Item:"),
+                          const Text("الايقونه:"),
                           const SizedBox(width: 10,),
                           defaultTextField(
                             containerWidth: 155,
@@ -256,7 +256,7 @@ String? serialNumberText;
                           ),
                           const SizedBox(width: 30,),
                                 
-                          const Text("Brand:"),
+                          const Text("النوع:"),
                           const SizedBox(width: 10,),
                           defaultTextField(
                             containerWidth: 140,
@@ -265,7 +265,7 @@ String? serialNumberText;
                           ),
                           const SizedBox(width: 30,),
                                 
-                          const Text("Color:"),
+                          const Text("اللون:"),
                           const SizedBox(width: 10,),
                           defaultTextField(
                             containerWidth: 105,
@@ -289,7 +289,7 @@ String? serialNumberText;
                     const SizedBox(height: 30,),
                       Row(
                         children: [
-                      const Text("S/N:"),
+                      const Text("الرقم التسلسلي:"),
                       const SizedBox(width: 20,),
                       //defaultTextField(containerWidth: 200, textController: serialNumber),
                       Container(
@@ -304,7 +304,7 @@ String? serialNumberText;
                           )
                       ),
                       const SizedBox(width: 20,),
-                      const Text("Destnation:"),
+                      const Text("مكان التواجد:"),
                       const SizedBox(width: 20,),
                       defaultTextField(
                             containerWidth: 200,
@@ -322,7 +322,7 @@ String? serialNumberText;
                       //   serialNumber: serialNumber.text 
                       // );
                       serialNumberUpdate.clear(); //clears the textfield text after inserted
-                      }, icon: const Icon(Icons.insert_chart), label: const Text("UPDATE")
+                      }, icon: const Icon(Icons.insert_chart), label: const Text("تحديث")
                     ),
                 ]
                               ),

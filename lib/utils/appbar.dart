@@ -14,14 +14,16 @@ AppBar defaultAppBar({          //Constructor Calls These Parameters whenever Th
 {
   return AppBar(
     backgroundColor: appbarColor,
-    elevation: elevation,
-    
-    //title: Text(appBarTitle!, style: const TextStyle(color: Colors.deepPurple)), //AppBar Title in a String Varaible Will be used in a TEXT Widget... Just pass it Tgat String.
+    elevation: elevation, 
+    title: Text(appBarTitle!, textAlign: TextAlign.right, //style: const TextStyle(color: Colors.deepPurple)
+    ), //AppBar Title in a String Varaible Will be used in a TEXT Widget... Just pass it Tgat String.
+
     leading: backwordArrow,               //An Arrow To back in Pages
     actions: <Widget>[                     //ICON will be in Actions Not Leadings.
-    IconButton(onPressed: (){}, icon: const Icon(Icons.language)),
+    //IconButton(onPressed: (){}, icon: const Icon(Icons.language)),
     const SizedBox(width: 5,),
-    Image.asset("assets/images/tmc.png"),
+    
+    //Image.asset("assets/images/NewLogo.png"),
       if (iconButton != null) iconButton, //A Failur Safe Gurad to Prevent NULL error and also Check if there is an ICON or NOT.
     ],
   );

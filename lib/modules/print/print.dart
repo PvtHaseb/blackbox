@@ -21,16 +21,16 @@ class PrintScreen extends StatelessWidget {
             builder: (context, state) {
               return SafeArea(
                   child: Scaffold(
-                appBar: defaultAppBar(appBarTitle: "Print & Export", elevation: 3, appbarColor: Specs().cGray_400),
+                appBar: defaultAppBar(appBarTitle: "صفحة الطباعة والتصدير", elevation: 3, appbarColor: Specs().cGray_400),
                 body:  Padding(padding: const EdgeInsets.all(15),
                 child: Column(
                   children: [
                     Row(
                       children:
                       [
-                        defaultButton(btnText: "Export As PDF\n\t\t\t\t\tLibrary", btnColor: Specs().cBlue_400,btnFunction: (){}),
+                        defaultButton(btnText: "تصدير بصيغة ملف PDF\n\t\t\t\t\tاكتشاف اعطال", btnColor: Specs().cBlue_400,btnFunction: (){}),
                         const SizedBox(width: 50,),
-                        defaultButton(btnText: "Export As EXCEL\n\t\t\t\t\t\t\tLibrary", btnColor: Specs().cBlue_400,btnFunction: (){}),
+                        defaultButton(btnText: "تصدير بصيغة ملف Excel\n\t\t\t\t\t\t\tLibrary", btnColor: Specs().cBlue_400,btnFunction: (){}),
                         const SizedBox(width: 50,),
                         defaultButton(btnText: "Export As DOCX\n\t\t\t\t\t\t\tLibrary", btnColor: Specs().cBlue_400,btnFunction: (){}),
                       ],
@@ -41,7 +41,7 @@ class PrintScreen extends StatelessWidget {
                       [
                         defaultButton(btnText: "\t\t\t\tExport As PDF\n\t\t\t\t\t\t\tCorruption Discovery", btnColor: Specs().cBlue_400, btnFunction: (){}),
                         const SizedBox(width: 50,),
-                        defaultButton(btnText: "\t\t\t\tExport As EXCEL\n\t\t\t\t\t\t\tCorruption Discovery", btnColor: Specs().cBlue_400,btnFunction: (){}),
+                        defaultButton(btnText: "\t\t\t\tتصدير بصيغة ملف Excel\n\t\t\t\t\t\t\tCorruption Discovery", btnColor: Specs().cBlue_400,btnFunction: (){}),
                         const SizedBox(width: 50,),
                         defaultButton(btnText: "\t\t\t\tExport As DOCX\n\t\t\t\t\t\t\tCorruption Discovery", btnColor: Specs().cBlue_400,btnFunction: (){}),
                       ],
@@ -50,7 +50,7 @@ class PrintScreen extends StatelessWidget {
                     Row(
                       children:
                       [
-                        defaultButton(btnText: "Print Now", btnColor: Specs().cBlue_400, btnFunction: (){}),
+                        defaultButton(btnText: "طباعة الان", btnColor: Specs().cBlue_400, btnFunction: (){}),
                       ],
                     ),
                   ],

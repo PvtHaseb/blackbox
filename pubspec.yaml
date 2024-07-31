@@ -28,7 +28,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.1
+  flutter_lints: ^4.0.0
   isar_generator: ^3.1.0+1
   build_runner: ^2.2.0
   analyzer: ^5.13.0
@@ -56,3 +56,7 @@ flutter:
     - assets/images/Corr_dis2.png
     - assets/images/Soldier.png
     - assets/images/Soldier2.png
+    - assets/images/NewLogo(1).png
+    - assets/images/NewLogo.png
+    - assets/images/NewLogoOriginal.jpeg
+    - assets/images/background2.jpg

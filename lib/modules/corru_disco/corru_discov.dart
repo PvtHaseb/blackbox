@@ -23,10 +23,10 @@ class CorruptionDiscovery extends StatelessWidget
           builder: (context, state) {
             return SafeArea(
               child: Scaffold(
-                appBar: defaultAppBar(appBarTitle: "Corruption Discovery", elevation: 3, appbarColor: Specs().cGray_400,),
+                appBar: defaultAppBar(appBarTitle: "معمل اكتشاف الاعطال", elevation: 3, appbarColor: Specs().cGray_400,),
 
                 body: FutureBuilder<List<Items>>(
-                  future: isar.items.where().filter().destnationEqualTo("Corruption Discovery",).findAll(),
+                  future: isar.items.where().filter().destnationEqualTo("معمل اكتشاف الاعطال",).findAll(),
                   builder: (context, snapshot) {
                     if (snapshot.connectionState == ConnectionState.waiting) {
                       return const CircularProgressIndicator();
@@ -37,12 +37,12 @@ class CorruptionDiscovery extends StatelessWidget
                         padding: const EdgeInsets.all(10),
                         child: DataTable(
                           columns: const <DataColumn>[
-                            DataColumn(label: Text('ID')),
-                            DataColumn(label: Text('Item')),
-                            DataColumn(label: Text('Brand')),
-                            DataColumn(label: Text('Color')),
-                            DataColumn(label: Text('Serial number')),
-                            DataColumn(label: Text('Destnation')),
+                            DataColumn(label: Text('الرقم التعريفي')),
+                            DataColumn(label: Text('الايقونه')),
+                            DataColumn(label: Text('النوع')),
+                            DataColumn(label: Text('اللون')),
+                            DataColumn(label: Text('الرقم التسلسلي')),
+                            DataColumn(label: Text('مكان التواجد')),
                           ],
                           rows: snapshot.data!
                               .map((Items item) => DataRow(

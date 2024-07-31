@@ -82,7 +82,7 @@ bool _obscureText = true;
                                   borderRadius: BorderRadius.circular(10.0),
                                   child: Image.asset(
                                     //"assets/images/sc_assault.jpg",
-                                    "assets/images/tmc.png",
+                                    "assets/images/NewLogo.png",
                                     width: 250,
                                     height: 250,
                                     fit: BoxFit.cover,
@@ -92,7 +92,7 @@ bool _obscureText = true;
 
                               //const SizedBox(height: 30,),
                               Container(
-                                child:  Text("جناح الحاسب الالي - الصندوق الاسود", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18, fontFamily: ArabicThemeData.font(arabicFont: ArabicFont.dinNextLTArabic), package: ArabicThemeData.package),),
+                                child:  Text("فرع الحاسب الالي - منظومة التحكم والسيطرة علي المخازن", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, fontFamily: ArabicThemeData.font(arabicFont: ArabicFont.dinNextLTArabic), package: ArabicThemeData.package),),
                                 //child:  Text("جناح الحاسب الالي", style: GoogleFonts.lato(),
                               ),
                               const SizedBox(height: 30,),
@@ -108,7 +108,7 @@ bool _obscureText = true;
                                   controller: usernameController,
                                   keyboardType: TextInputType.text,
                                   decoration: const InputDecoration(
-                                    labelText: 'Username',
+                                    labelText: 'اسم المستخدم',
                                     border: OutlineInputBorder(),
                                     prefixIcon: Icon(Icons.castle)
                                   ),
@@ -128,7 +128,7 @@ bool _obscureText = true;
                                   controller: passwordController,
                                   keyboardType: TextInputType.none,
                                   decoration: InputDecoration(
-                                      labelText: 'Password',
+                                      labelText: 'كلمة المرور',
                                       border: const OutlineInputBorder(),
                                       prefixIcon: const Icon(Icons.password_rounded),
                                       suffixIcon: IconButton(
@@ -148,7 +148,7 @@ bool _obscureText = true;
                               const SizedBox(height: 20),
                               Container(
                                 width: 130,
-                                child: defaultButton(btnText: "Login", btnFunction: (){
+                                child: defaultButton(btnText: "تسجيل الدخول", btnFunction: (){
                                   String user = usernameController.text;
                                   String password = passwordController.text;
                                   LoginChecker(context: context).checker(user, password);

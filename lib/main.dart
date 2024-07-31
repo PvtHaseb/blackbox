@@ -1,6 +1,10 @@
+// ignore_for_file: unused_import
+
 import 'package:black_box/const/bloc/bloc_observer.dart';
 import 'package:black_box/models/database/db_init.dart';
+import 'package:black_box/modules/home/home%20-%20Copy.dart';
 import 'package:black_box/modules/home/home.dart';
+import 'package:black_box/modules/login/login.dart';
 import 'package:bloc/bloc.dart';
 import 'package:window_manager/window_manager.dart';
 // import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -15,10 +19,10 @@ void main() async {
   //Onces Again for the Screen Size Adjuster.
   WidgetsFlutterBinding.ensureInitialized();
   //await windowManager.ensureInitialized(); //Not Necessary BUT KEPT
-  await WindowManager.instance.setResizable(false);
+  // await WindowManager.instance.setResizable(false);
 
-  await WindowManager.instance.setMinimumSize(const Size(200,  200)); // Minimum size
-  await WindowManager.instance.setMaximumSize(const Size(800,  800)); // Maximum size
+  // await WindowManager.instance.setMinimumSize(const Size(200,  200)); // Minimum size
+  // await WindowManager.instance.setMaximumSize(const Size(800,  800)); // Maximum size
 
   // setting min and max with the same size to prevent resizing
   //await DesktopWindow.setMinWindowSize(const Size(640,480));

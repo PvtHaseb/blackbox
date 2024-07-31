@@ -70,7 +70,21 @@ class HexColor extends Color {
 }
 
 
-class NumberConversion{
+// class NumberConversion{
+// dynamic toArNumber(dynamic enNumber) {
+//   if (enNumber.toString().isNotEmpty) {
+//     NumberFormat formatter = NumberFormat('#.##', 'ar_EG');
+//     dynamic arNumber = formatter.format(enNumber);
+//     return arNumber.toString();
+//   }
+//   else{
+//     NumberFormat formatter = NumberFormat('#.##', 'ar_EG');
+//     dynamic arNumber = formatter.format(enNumber);
+//     return arNumber;
+//   }
+// }
+// }
+
 dynamic toArNumber(dynamic enNumber) {
   if (enNumber.toString().isNotEmpty) {
     NumberFormat formatter = NumberFormat('#.##', 'ar_EG');
@@ -82,7 +96,6 @@ dynamic toArNumber(dynamic enNumber) {
     dynamic arNumber = formatter.format(enNumber);
     return arNumber;
   }
-}
 }
 
 //String? inspectorUrl;

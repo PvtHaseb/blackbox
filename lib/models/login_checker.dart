@@ -1,6 +1,7 @@
-// ignore_for_file: sized_box_for_whitespace
+// ignore_for_file: sized_box_for_whitespace, unused_import
 
 import 'package:black_box/const/const.dart';
+import 'package:black_box/modules/home/home%20-%20Copy.dart';
 import 'package:black_box/modules/home/home.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +12,7 @@ class LoginChecker{ //START
 
 //Checker Fun
 void checker(String user, String password){
-  if(user == "Shadow" && password == "Company"){
+  if(user == "TMC" && password == "TMC@2024"){
     Navigator.push(context, MaterialPageRoute(builder: (context) => const Home()),);
   }
   else{
@@ -26,15 +27,15 @@ void showAlertDialog(BuildContext context) {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: const Text('Warning!'),
+          title: const Text('خطأ!'),
 
           content: Container(
             height: 21,
-            child: const Column(children: [Text('User name Or Password is Incorrect.'),]),
+            child: const Column(children: [Text('خطأ في اسم المستخدم او كلمة المرور.'),]),
           ),
           actions: <Widget>[
             TextButton(
-              child: Text('OK',style: TextStyle(color: Specs().cBlack),),
+              child: Text('متابعة',style: TextStyle(color: Specs().cBlack),),
           onPressed: () {Navigator.of(context).pop();
           },
           

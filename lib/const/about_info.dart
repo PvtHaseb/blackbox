@@ -9,23 +9,23 @@ void showAlertDialog(BuildContext context) {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: const Text('App INFO'),
+          title: const Text('حول البرنامج', textAlign: TextAlign.right,),
           content:  Container(
             height: 75,
             child: const Column(
               children: [
-              Text('Developer: Shadow Company.'),
+              Text('TMC :المطور', textAlign: TextAlign.right,),
               SizedBox(height: 5,),
-              Text('Version: 0.0.1'),
-              SizedBox(height: 5,),
-              Text('Company: TMC.'),
-              SizedBox(height: 5,),
+              Text('الاصدار: 0.0.1', textAlign: TextAlign.right,),
+              // SizedBox(height: 5,),
+              // Text('Company: TMC.'),
+              // SizedBox(height: 5,),
             ]
                     ),
           ),
           actions: <Widget>[
             TextButton(
-              child: Text('OK', style: TextStyle(color: Specs().cBlack),),
+              child: Text('متابعة', style: TextStyle(color: Specs().cBlack),),
               onPressed: () {
                 Navigator.of(context).pop();
               },
